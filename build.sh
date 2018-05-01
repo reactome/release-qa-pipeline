@@ -18,3 +18,9 @@ cp -f \
 # Slice.
 cp -fr ../release-qa/target/release-qa-*jar-with-dependencies.jar \
    slice/slice-qa-with-dependencies.jar
+
+# Assemble the distro.
+mkdir -p dist
+tar czf dist/release-qa-pipeline.tar.gz \
+    README.md */*.sh */*.jar */lib \
+    curator/QA_SkipList curator/resources/*.txt curator/resources/*.properties
