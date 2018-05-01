@@ -1,0 +1,11 @@
+.*
+auth.properties
+*/log/*
+*.log
+*/reports/*
+*/output/*
+*/QA_Output/*
+*/target/*
+*/lib/*
+*/data/*
+*.jar
