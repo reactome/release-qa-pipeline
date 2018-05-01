@@ -9,3 +9,5 @@ auth.properties
 */lib/*
 */data/*
 *.jar
+*.gz
+*.zip
