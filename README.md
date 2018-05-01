@@ -43,8 +43,8 @@ e.g.:
     cd graph
     ./import.sh --help
 
-This script assumes that you will replace the server graph
-database.
+The procedure below assumes that you will replace the server
+graph database.
 
 Run the scripts as follows:
 
