@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#!/usr/bin/env bash
 
 function display_help () {
     echo "Usage: $0 [option...]"
