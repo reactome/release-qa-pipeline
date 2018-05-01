@@ -28,8 +28,9 @@ Build
 Deployment
 ----------
 
-Copy the project contents from the Build phase to the release
-staging server at `/usr/local/reactomes/Reactome/release-qa`.
+Copy `dist/release-qa-pipeline.tar.gz` to the release
+staging server and decompress it at
+`/usr/local/reactomes/Reactome/release-qa`.
 
 
 Usage
