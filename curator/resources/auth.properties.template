@@ -1,0 +1,5 @@
+# Copy this file to auth.properties and adapt for your enviroment.
+dbHost=localhost
+dbName=reactome
+dbUser=me
+dbPwd=mine

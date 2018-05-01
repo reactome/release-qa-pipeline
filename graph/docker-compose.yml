@@ -1,0 +1,10 @@
+version: "3.6"
+services:
+  neo4j:
+    image: neo4j:3.3
+    environment:
+      NEO4J_AUTH: neo4j/fl3ky
+    ports:
+      - "17474:7474"
+    volumes:
+      - ./neo4j/data:/data
