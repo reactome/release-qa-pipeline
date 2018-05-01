@@ -66,7 +66,7 @@ Run the scripts as follows:
 
 32. Execute `import.sh [options]`.
 
-33. Reset the Neo4j database::
+33. Reset the Neo4j database:
 
         systemctl stop neo4j
         (cd /var/lib/neo4j/data/databases/;
