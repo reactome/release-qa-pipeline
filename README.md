@@ -24,14 +24,12 @@ Build
 
 3. cd to `release-qa-pipeline` and run `build.sh`.
 
-4. cd to the `curator` subdirectory and follow the instructions
-   in `resources/auth.properties.template`.
 
 Deployment
 ----------
 
 Copy the project contents from the Build phase to the release
-staging server at `/usr/local/reactome/Reactomes/release-qa`.
+staging server at `/usr/local/reactomes/Reactome/release-qa`.
 
 
 Usage
@@ -43,6 +41,9 @@ e.g.:
 
     cd graph
     ./import.sh --help
+
+This script assumes that you will replace the server graph
+database.
 
 Run the scripts as follows:
 
@@ -64,24 +65,17 @@ Run the scripts as follows:
 
 32. Execute `import.sh [options]`.
 
-33. Reset the Neo4j database:
+33. Reset the Neo4j database::
 
-       systemctl stop neo4j
-       (cd /var/lib/neo4j/data/databases/;
-        mv graph.db graph.db~;
-        ln -s /usr/local/reactome/Reactomes/release-qa/databases/graph.db)
-       systemctl start neo4j
+        systemctl stop neo4j
+        (cd /var/lib/neo4j/data/databases/;
+         mv -f graph.db graph.db.old;
+         cp -r /usr/local/reactome/Reactomes/release-qa/databases/graph.db .)
+        systemctl start neo4j
 
 34. Execute `qa.sh [options]`.
 
 35. Examine the QA results in the `output` subdirectory.
-
-36. Restore the Neo4j database:
-
-       systemctl stop neo4j
-       (cd /var/lib/neo4j/data/databases/;
-        rm graph.db; mv graph.db~ graph.db)
-       systemctl start neo4j
 
 41. cd to the `../diagram` subdirectory.
 
