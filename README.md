@@ -44,7 +44,8 @@ e.g.:
     ./import.sh --help
 
 The procedure below assumes that you will replace the server
-graph database.
+graph database. You will need `sudo` permission to stop and
+start Neo4j.
 
 Run the scripts as follows:
 
