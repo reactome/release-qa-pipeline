@@ -68,11 +68,11 @@ Run the scripts as follows:
 
 33. Reset the Neo4j database:
 
-        systemctl stop neo4j
+        sudo systemctl stop neo4j
         (cd /var/lib/neo4j/data/databases/;
          mv -f graph.db graph.db.old;
          cp -r /usr/local/reactome/Reactomes/release-qa/databases/graph.db .)
-        systemctl start neo4j
+        sudo systemctl start neo4j
 
 34. Execute `qa.sh [options]`.
 
