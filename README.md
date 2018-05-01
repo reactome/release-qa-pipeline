@@ -24,21 +24,67 @@ Build
 
 3. cd to `release-qa-pipeline` and run `build.sh`.
 
-4. cd to the `curator` subdirectory and follow the instructions in
-   `resources/auth.properties.template`.
+4. cd to the `curator` subdirectory and follow the instructions
+   in `resources/auth.properties.template`.
+
+Deployment
+----------
+
+Copy the project contents from the Build phase to the release
+staging server at `/usr/local/reactome/Reactomes/release-qa`.
 
 
-Run
----
-As of May 2018, cd to each subdirectory, display the `*.sh` help, e.g.:
+Usage
+-----
+cd to each `/usr/local/reactome/Reactomes/release-qa`
+subdirectory and display the `*.sh` help to discover the
+options,
+e.g.:
 
     cd graph
     ./import.sh --help
 
-and run the script.
+Run the scripts as follows:
 
-For `graph`, run `import.sh`, shutdown Neo4j, switch Neo4j to the
-`data/databases/graph.db`, restart Neo4j, run `qa.sh` and switch
-Neo4j back to the original database.
+1. cd to `/usr/local/reactome/Reactomes/release-qa`.
 
-_Note_: these instructions will change in the near future.
+11. cd to the `curator` subdirectory.
+
+12. Execute `run.sh [options]`.
+
+13. Examine the QA results in the `QA_Output` subdirectory.
+
+21. cd to the `../slice` subdirectory.
+
+22. Execute `run.sh [options]`.
+
+23. Examine the QA results in the `output` subdirectory.
+
+31. cd to the `../graph` subdirectory.
+
+32. Execute `import.sh [options]`.
+
+33. Reset the Neo4j database:
+
+       systemctl stop neo4j
+       (cd /var/lib/neo4j/data/databases/;
+        mv graph.db graph.db~;
+        ln -s /usr/local/reactome/Reactomes/release-qa/databases/graph.db)
+       systemctl start neo4j
+
+34. Execute `qa.sh [options]`.
+
+35. Examine the QA results in the `output` subdirectory.
+
+36. Restore the Neo4j database:
+
+       systemctl stop neo4j
+       (cd /var/lib/neo4j/data/databases/;
+        rm graph.db; mv graph.db~ graph.db)
+       systemctl start neo4j
+
+41. cd to the `../diagram` subdirectory.
+
+42. Execute `run.sh [options]`.
+
+43. Examine the QA results in the `output` subdirectory.
