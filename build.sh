@@ -2,12 +2,12 @@
 
 # Curator.
 (cd curator; ant -f create-jar.xml)
-cp -f ../graph-importer/target/BatchImporter.jar graph
 
 # Graph.
+cp -f ../graph-importer/target/BatchImporter.jar graph
 [ -d graph/lib ] || mkdir graph/lib
 cp -fr ../graph-importer/target/lib/* graph/lib
-cp -fr ../graph-qa/target/graph-qa-jar-with-dependencies.jar \
+cp -f ../graph-qa/target/graph-qa-jar-with-dependencies.jar \
    graph/graph-qa-with-dependencies.jar
 
 # Diagram.
