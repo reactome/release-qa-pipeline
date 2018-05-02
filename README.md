@@ -58,9 +58,11 @@ Run the scripts as follows:
 
 11. cd to the `curator` subdirectory.
 
-12. Execute `run.sh [options]`.
+12. Adjust the resources `.txt` files if necessary.
 
-13. Examine the QA results in the `QA_Output` subdirectory.
+13. Execute `run.sh [options]`.
+
+14. Examine the QA results in the `QA_Output` subdirectory.
 
 21. cd to the `../slice` subdirectory.
 
