@@ -6,8 +6,6 @@ function display_help () {
     echo "   --mysql-host   MySQL hostname"
     echo "   --mysql-user   MySQL userid"
     echo "   --mysql-pswd   MySQL password"
-    echo "   --neo4j-user   Neo4j user (default neo4j)"
-    echo "   --neo4j-pswd   Neo4j password (default neo4j)"
     echo
     exit 0
 }
@@ -26,8 +24,6 @@ while true; do
     --mysql-user ) mysql_user="$2"; shift 2 ;;
     --mysql-pswd ) mysql_pswd="$2"; shift 2 ;;
     --mysql-db ) mysql_db="$2"; shift 2 ;;
-    --neo4j-user ) neo4j_user="$2"; shift 2 ;;
-    --neo4j-pswd ) neo4j_pswd="$2"; shift 2 ;;
     -- ) shift; break ;;
     -* ) fail "Unsupported option: $1" ;;
     * ) break ;;
@@ -42,4 +38,4 @@ opts="-n data/databases/graph.db"
 
 rm -f reports/*
 [ -d target ] || mkdir target
-echo java -jar graph-qa-with-dependencies.jar $opts
+java -Xmx8G -jar graph-importer-with-dependencies.jar $opts
