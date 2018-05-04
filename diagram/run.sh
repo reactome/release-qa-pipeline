@@ -3,20 +3,21 @@
 function display_help () {
     echo "Usage: $0 [option...]"
     echo
-    echo "   --mysql-host   MySQL hostname (default localhost)"
-    echo "   --mysql-user   MySQL userid (default localhost)"
-    echo "   --mysql-pswd   MySQL password"
-    echo "   --mysql-db     MySQL database (default reactome)"
-    echo "   --neo4j-host   Neo4j host (default localhost)"
-    echo "   --neo4j-user   Neo4j user (default neo4j)"
-    echo "   --neo4j-pswd   Neo4j password (default neo4j)"
+    echo "   -c, --config FILE   command options file"
+    echo "   --mysql-host HOST   MySQL hostname (default localhost)"
+    echo "   --mysql-user USER   MySQL userid (default reactome)"
+    echo "   --mysql-pswd PSWD   MySQL password"
+    echo "   --mysql-db DB       MySQL database"
+    echo "   --neo4j-host HOST   Neo4j host (default localhost)"
+    echo "   --neo4j-user USER   Neo4j user (default neo4j)"
+    echo "   --neo4j-pswd PSWD   Neo4j password (default neo4j)"
     echo
     exit 0
 }
 
 function fail () {
     echo "$1"
-    display_help
+    display-help
     exit 1
 }
 
@@ -24,6 +25,7 @@ function fail () {
 while true; do
   case "$1" in
     -h | --help ) display_help; shift ;;
+    -c | --config ) config="$2"; shift 2 ;;
     --mysql-host ) mysql_host="$2"; shift 2 ;;
     --mysql-user ) mysql_user="$2"; shift 2 ;;
     --mysql-pswd ) mysql_pswd="$2"; shift 2 ;;
@@ -36,6 +38,11 @@ while true; do
     * ) break ;;
   esac
 done
+
+if [ -n "$config" ]; then
+    [ -r "$config" ] || fail "Can't read configuration file $config"
+    eval `cat $config | tr '-' '_' | tr -d ' '`
+fi
 
 opts="-o target"
 [ -n "$mysql_host" ] && opts="$opts -e $mysql_host"
