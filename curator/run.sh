@@ -53,5 +53,6 @@ dbPwd=$mysql_pswd
 dbName=$mysql_db
 HERE
 
-rm -f QA_Output/*
-java -Xmx8G -jar curator-with-dependencies.jar org.gk.qualityCheck.CommandLineRunner
+dir=`dirname $0`
+rm -f $dir/QA_Output/*
+(cd $dir; java -Xmx8G -jar curator-with-dependencies.jar org.gk.qualityCheck.CommandLineRunner)

@@ -39,8 +39,9 @@ fi
 opts="-o reports"
 [ -n "$neo4j_host" ] && opts="$opts -h $neo4j_host"
 [ -n "$neo4j_user" ] && opts="$opts -u $neo4j_user"
-[ -n "$neo4j_pswd" ] && opts="$opts -p $neo4j_pswd"
+[ -n "$neo4j_pswd" ] && opts="$opts -p '$neo4j_pswd'"
 
-rm -f reports/*
-[ -d target ] || mkdir target
-java -Xmx8G -jar graph-qa-with-dependencies.jar $opts
+dir=`dirname $0`
+rm -f $dir/reports/*
+[ -d $dir/target ] || mkdir $dir/target
+(cd $dir; java -Xmx8G -jar graph-qa-with-dependencies.jar $opts)

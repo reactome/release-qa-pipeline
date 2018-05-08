@@ -53,5 +53,6 @@ dbPwd=$mysql_pswd
 dbName=$mysql_db
 HERE
 
-#rm -f reports/*
-java -Xmx8G -jar slice-qa-with-dependencies.jar
+dir=`dirname $0`
+rm -f $dir/reports/*
+(cd $dir; java -Xmx8G -jar slice-qa-with-dependencies.jar)
