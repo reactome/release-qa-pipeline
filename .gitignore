@@ -1,5 +1,6 @@
 .*
 auth.properties
+*.cfg
 */log/*
 *.log
 */reports/*
