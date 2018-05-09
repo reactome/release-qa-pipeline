@@ -3,7 +3,7 @@ services:
   neo4j:
     image: neo4j:3.3
     environment:
-      NEO4J_AUTH: neo4j/fl3ky
+      NEO4J_AUTH: neo4j/****
     ports:
       - "17474:7474"
     volumes:
