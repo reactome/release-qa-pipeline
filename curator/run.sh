@@ -45,14 +45,15 @@ fi
 [ -z "$mysql_db" ] && fail "Missing required option: --mysql_db"
 [ -z "$mysql_pswd" ] && fail "Missing required option: --mysql_pswd"
 
-mkdir -p resources
-cat <<HERE > resources/auth.properties
+dir=`dirname $0`
+
+mkdir -p $dir/resources
+cat <<HERE > $dir/resources/auth.properties
 dbHost=$mysql_host
 dbUser=$mysql_user
 dbPwd=$mysql_pswd
 dbName=$mysql_db
 HERE
 
-dir=`dirname $0`
 rm -f $dir/QA_Output/*
 (cd $dir; java -Xmx8G -jar curator-with-dependencies.jar org.gk.qualityCheck.CommandLineRunner)
