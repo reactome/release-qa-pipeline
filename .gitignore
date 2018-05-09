@@ -1,5 +1,6 @@
 .*
 auth.properties
+docker-compose.yml
 *.cfg
 */log/*
 *.log
