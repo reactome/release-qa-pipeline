@@ -21,4 +21,4 @@ cp -fr ../release-qa/target/release-qa-*jar-with-dependencies.jar \
 mkdir -p dist
 tar czf dist/release-qa-pipeline.tar.gz \
     README.md */*.sh */*.jar \
-    curator/QA_SkipList curator/resources/*.txt curator/resources/*.properties
+    curator/QA_SkipList curator/resources/*.txt curator/resources/log4j.properties
