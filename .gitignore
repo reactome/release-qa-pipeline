@@ -13,3 +13,4 @@ docker-compose.yml
 *.jar
 *.gz
 *.zip
+dist
