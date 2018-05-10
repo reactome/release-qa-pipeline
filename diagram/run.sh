@@ -47,11 +47,11 @@ fi
 opts="-o target"
 [ -n "$mysql_host" ] && opts="$opts -e $mysql_host"
 [ -n "$mysql_user" ] && opts="$opts -g $mysql_user"
-[ -n "$mysql_pswd" ] && opts="$opts -h '$mysql_pswd'"
+[ -n "$mysql_pswd" ] && opts="$opts -h $mysql_pswd"
 [ -n "$mysql_db" ] && opts="$opts -f $mysql_db"
 [ -n "$neo4j_host" ] && opts="$opts -a $neo4j_host"
 [ -n "$neo4j_user" ] && opts="$opts -c $neo4j_user"
-[ -n "$neo4j_pswd" ] && opts="$opts -d '$neo4j_pswd'"
+[ -n "$neo4j_pswd" ] && opts="$opts -d $neo4j_pswd"
 
 dir=`dirname $0`
 rm -f $dir/reports/*

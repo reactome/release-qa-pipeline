@@ -41,10 +41,8 @@ fi
 opts="-n data/databases/graph.db"
 [ -n "$mysql_host" ] && opts="$opts -h $mysql_host"
 [ -n "$mysql_user" ] && opts="$opts -u $mysql_user"
-[ -n "$mysql_pswd" ] && opts="$opts -p '$mysql_pswd'"
+[ -n "$mysql_pswd" ] && opts="$opts -p $mysql_pswd"
 [ -n "$mysql_db" ] && opts="$opts -d $mysql_db"
 
 dir=`dirname $0`
-rm -f $dir/reports/*
-[ -d $/dir/target ] || mkdir $dir/target
 (cd $dir; java -Xmx8G -jar graph-importer-with-dependencies.jar $opts)
