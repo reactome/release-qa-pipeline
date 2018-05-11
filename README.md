@@ -78,8 +78,9 @@ Run the scripts as follows:
 
         sudo systemctl stop neo4j
         (cd /var/lib/neo4j/data/databases/;
-         mv -f graph.db graph.db.old;
-         cp -r /usr/local/reactomes/Reactome/release-qa/databases/graph.db .)
+         sudo mv -f graph.db graph.db.old;
+         sudo cp -r /usr/local/reactomes/Reactome/release-qa/graph/data/databases/graph.db .;
+         sudo chown -R neo4j:adm graph.db)
         sudo systemctl start neo4j
 
 34. Execute `qa.sh [options]`.
