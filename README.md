@@ -21,7 +21,7 @@ Build
 2. For Maven-based projects, cd to that project and build the package:
 
        mvn clean package -U
-   
+
    However, see the _Note_ below to work around a `graph-importer` bug.
 
 3. cd to `release-qa-pipeline` and run `build.sh`.
@@ -58,7 +58,7 @@ changed dependencies.
 
 After the preceding work-arounds, the `release-qa-pipeline` dependent
 repositories can be refreshed from the project directory as follows:
-    
+
     (cd ../CuratorTool; git pull)
     (cd ../graph-importer; git pull; mvn clean package -U)
     (cd ../graph-qa; git pull; mvn clean package -U)
@@ -121,7 +121,8 @@ Run the scripts as follows:
 
         sudo systemctl stop neo4j
         (cd /var/lib/neo4j/data/databases/;
-         sudo mv -f graph.db graph.db.old;
+         sudo rm -r graph.db.old;
+         sudo mv graph.db graph.db.old;
          sudo cp -r /usr/local/reactomes/Reactome/release-qa/graph/data/databases/graph.db .;
          sudo chown -R neo4j:adm graph.db)
         sudo systemctl start neo4j
