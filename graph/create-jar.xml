@@ -12,25 +12,20 @@
                 <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
                 <attribute name="Rsrc-Main-Class" value="org.reactome.server.graph.Main"/>
                 <attribute name="Class-Path" value="."/>
-                <attribute name="Rsrc-Class-Path" value="./ graph-core-1.1.2.jar spring-data-neo4j-4.1.11.RELEASE.jar neo4j-ogm-core-2.0.6.jar neo4j-ogm-api-2.0.6.jar jackson-databind-2.7.1.jar jackson-annotations-2.7.0.jar jackson-core-2.7.1.jar commons-codec-1.10.jar neo4j-ogm-compiler-2.0.6.jar commons-collections4-4.1.jar neo4j-ogm-http-driver-2.0.6.jar httpclient-4.5.2.jar httpcore-4.4.4.jar commons-logging-1.2.jar commons-io-2.4.jar spring-data-commons-1.12.11.RELEASE.jar spring-core-4.2.9.RELEASE.jar spring-beans-4.2.9.RELEASE.jar spring-context-4.2.9.RELEASE.jar spring-aop-4.2.9.RELEASE.jar aopalliance-1.0.jar spring-expression-4.2.9.RELEASE.jar spring-tx-4.2.9.RELEASE.jar jcl-over-slf4j-1.7.25.jar reflections-0.9.10.jar guava-15.0.jar javassist-3.19.0-GA.jar annotations-2.0.1.jar swagger-annotations-1.5.6.jar spring-aspects-4.3.11.RELEASE.jar aspectjweaver-1.8.9.jar aspectjrt-1.8.10.jar commons-lang3-3.4.jar jodd-bean-3.7.jar jodd-core-3.7.jar reactome-base-1.2.8.jar commons-lang-2.5.jar mysql-connector-java-5.1.28.jar neo4j-kernel-3.2.3.jar neo4j-graphdb-api-3.2.3.jar neo4j-resource-3.2.3.jar neo4j-common-3.2.3.jar neo4j-collections-3.2.3.jar neo4j-primitive-collections-3.2.3.jar neo4j-unsafe-3.2.3.jar neo4j-io-3.2.3.jar neo4j-csv-3.2.3.jar neo4j-logging-3.2.3.jar neo4j-lucene-upgrade-3.2.3.jar lucene-backward-codecs-5.5.0.jar neo4j-configuration-3.2.3.jar neo4j-index-3.2.3.jar neo4j-ssl-3.2.3.jar netty-all-4.1.8.Final.jar bcpkix-jdk15on-1.53.jar bcprov-jdk15on-1.53.jar neo4j-lucene-index-3.2.3.jar lucene-analyzers-common-5.5.0.jar lucene-core-5.5.0.jar lucene-queryparser-5.5.0.jar lucene-codecs-5.5.0.jar jsap-2.1.jar logback-classic-1.1.10.jar logback-core-1.1.10.jar slf4j-api-1.7.22.jar log4j-1.2.17.jar"/>
+                <attribute name="Rsrc-Class-Path" value="./ graph-core-1.1.10-SNAPSHOT.jar spring-data-neo4j-4.1.11.RELEASE.jar neo4j-ogm-core-2.0.6.jar neo4j-ogm-api-2.0.6.jar commons-codec-1.10.jar neo4j-ogm-compiler-2.0.6.jar commons-collections4-4.1.jar neo4j-ogm-http-driver-2.0.6.jar httpclient-4.5.2.jar httpcore-4.4.4.jar spring-data-commons-1.12.11.RELEASE.jar spring-core-4.2.9.RELEASE.jar spring-beans-4.2.9.RELEASE.jar spring-context-4.2.9.RELEASE.jar spring-aop-4.2.9.RELEASE.jar aopalliance-1.0.jar spring-expression-4.2.9.RELEASE.jar spring-tx-4.2.9.RELEASE.jar jcl-over-slf4j-1.7.25.jar reflections-0.9.10.jar guava-15.0.jar javassist-3.19.0-GA.jar annotations-2.0.1.jar swagger-annotations-1.5.6.jar spring-aspects-4.3.11.RELEASE.jar aspectjweaver-1.8.9.jar aspectjrt-1.8.10.jar commons-lang3-3.4.jar jodd-bean-3.7.jar jodd-core-3.7.jar reactome-base-1.2.12.jar commons-lang-2.5.jar mysql-connector-java-5.1.28.jar log4j-1.2.17.jar neo4j-kernel-3.3.3.jar neo4j-graphdb-api-3.3.3.jar neo4j-resource-3.3.3.jar neo4j-common-3.3.3.jar neo4j-values-3.3.3.jar neo4j-collections-3.3.3.jar neo4j-primitive-collections-3.3.3.jar neo4j-unsafe-3.3.3.jar neo4j-io-3.3.3.jar neo4j-csv-3.3.3.jar neo4j-logging-3.3.3.jar neo4j-lucene-upgrade-3.3.3.jar lucene-backward-codecs-5.5.0.jar neo4j-configuration-3.3.3.jar neo4j-index-3.3.3.jar neo4j-ssl-3.3.3.jar netty-all-4.1.17.Final.jar bcpkix-jdk15on-1.53.jar bcprov-jdk15on-1.53.jar neo4j-lucene-index-3.3.3.jar lucene-analyzers-common-5.5.0.jar lucene-core-5.5.0.jar lucene-queryparser-5.5.0.jar lucene-codecs-5.5.0.jar jsap-2.1.jar json-20090211.jar interactor-core-1.0.14.jar micluster-1.7.13.jar commons-collections-3.2.jar shiftone-cache-2.0b.jar ehcache-1.2.3.jar commons-logging-1.0.4.jar psicquic-registry-client-1.1.0.jar org.apache.servicemix.specs.jaxb-api-2.1-2.0.0.jar org.apache.servicemix.specs.stax-api-1.0-2.0.0.jar geronimo-activation_1.1_spec-1.0.2.jar org.apache.servicemix.bundles.jaxb-impl-2.2.4_2.jar jaxb-api-2.2.3.jar stax-api-1.0-2.jar activation-1.1.jar com.springsource.javax.activation-1.1.1.jar com.springsource.javax.xml.stream-1.0.1.jar psicquic-simple-client-1.3.3.jar json-lib-2.2.3-jdk15.jar commons-beanutils-1.7.0.jar ezmorph-1.0.6.jar miscore-1.3.14.jar json-lib-2.2.3.jar jackson-core-2.8.4.jar jackson-databind-2.8.4.jar jackson-annotations-2.8.0.jar psimitab-1.8.5.jar psi25-xml-1.8.5.jar xxindex-0.11.jar cpdetector-1.0.7.jar com.springsource.antlr-2.7.7.jar jargs-1.0.jar chardet-1.0.jar com.springsource.org.apache.commons.logging-1.1.1.jar com.springsource.org.apache.log4j-1.2.15.jar org.apache.servicemix.specs.jaxb-api-2.2-2.1.0.jar saxon-xom-8.7.jar saxon-8.7.jar xom-1.1.jar xmlParserAPIs-2.6.2.jar xalan-2.7.0.jar xml-apis-1.0.b2.jar jaxen-1.1-beta-8.jar dom4j-1.6.1.jar jdom-1.0.jar com.springsource.org.apache.commons.collections-3.2.1.jar com.springsource.org.apache.commons.lang-2.4.0.jar concurrent-trees-2.5.0.jar sqlite-jdbc-3.8.11.2.jar junit-4.12.jar hamcrest-core-1.3.jar super-csv-2.4.0.jar commons-io-2.5.jar logback-classic-1.1.10.jar logback-core-1.1.10.jar slf4j-api-1.7.22.jar"/>
             </manifest>
             <zipfileset src="jar-in-jar-loader.zip"/>
             <fileset dir="${dir.source}/target/classes"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/reactome/server/graph/graph-core/1.1.2" includes="graph-core-1.1.2.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/reactome/server/graph/graph-core/1.1.10-SNAPSHOT" includes="graph-core-1.1.10-SNAPSHOT.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/springframework/data/spring-data-neo4j/4.1.11.RELEASE" includes="spring-data-neo4j-4.1.11.RELEASE.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-ogm-core/2.0.6" includes="neo4j-ogm-core-2.0.6.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-ogm-api/2.0.6" includes="neo4j-ogm-api-2.0.6.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.1" includes="jackson-databind-2.7.1.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.0" includes="jackson-annotations-2.7.0.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.1" includes="jackson-core-2.7.1.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/commons-codec/commons-codec/1.10" includes="commons-codec-1.10.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-ogm-compiler/2.0.6" includes="neo4j-ogm-compiler-2.0.6.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/apache/commons/commons-collections4/4.1" includes="commons-collections4-4.1.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-ogm-http-driver/2.0.6" includes="neo4j-ogm-http-driver-2.0.6.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2" includes="httpclient-4.5.2.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4" includes="httpcore-4.4.4.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/commons-logging/commons-logging/1.2" includes="commons-logging-1.2.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/commons-io/commons-io/2.4" includes="commons-io-2.4.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/springframework/data/spring-data-commons/1.12.11.RELEASE" includes="spring-data-commons-1.12.11.RELEASE.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/springframework/spring-core/4.2.9.RELEASE" includes="spring-core-4.2.9.RELEASE.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/springframework/spring-beans/4.2.9.RELEASE" includes="spring-beans-4.2.9.RELEASE.jar"/>
@@ -51,37 +46,91 @@
             <zipfileset dir="${user.home}/.m2/repository/org/apache/commons/commons-lang3/3.4" includes="commons-lang3-3.4.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/jodd/jodd-bean/3.7" includes="jodd-bean-3.7.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/jodd/jodd-core/3.7" includes="jodd-core-3.7.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/reactome/base/reactome-base/1.2.8" includes="reactome-base-1.2.8.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/reactome/base/reactome-base/1.2.12" includes="reactome-base-1.2.12.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/commons-lang/commons-lang/2.5" includes="commons-lang-2.5.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/mysql/mysql-connector-java/5.1.28" includes="mysql-connector-java-5.1.28.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-kernel/3.2.3" includes="neo4j-kernel-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-graphdb-api/3.2.3" includes="neo4j-graphdb-api-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-resource/3.2.3" includes="neo4j-resource-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-common/3.2.3" includes="neo4j-common-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-collections/3.2.3" includes="neo4j-collections-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-primitive-collections/3.2.3" includes="neo4j-primitive-collections-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-unsafe/3.2.3" includes="neo4j-unsafe-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-io/3.2.3" includes="neo4j-io-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-csv/3.2.3" includes="neo4j-csv-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-logging/3.2.3" includes="neo4j-logging-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-lucene-upgrade/3.2.3" includes="neo4j-lucene-upgrade-3.2.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/log4j/log4j/1.2.17" includes="log4j-1.2.17.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-kernel/3.3.3" includes="neo4j-kernel-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-graphdb-api/3.3.3" includes="neo4j-graphdb-api-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-resource/3.3.3" includes="neo4j-resource-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-common/3.3.3" includes="neo4j-common-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-values/3.3.3" includes="neo4j-values-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-collections/3.3.3" includes="neo4j-collections-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-primitive-collections/3.3.3" includes="neo4j-primitive-collections-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-unsafe/3.3.3" includes="neo4j-unsafe-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-io/3.3.3" includes="neo4j-io-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-csv/3.3.3" includes="neo4j-csv-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-logging/3.3.3" includes="neo4j-logging-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-lucene-upgrade/3.3.3" includes="neo4j-lucene-upgrade-3.3.3.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/apache/lucene/lucene-backward-codecs/5.5.0" includes="lucene-backward-codecs-5.5.0.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-configuration/3.2.3" includes="neo4j-configuration-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-index/3.2.3" includes="neo4j-index-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-ssl/3.2.3" includes="neo4j-ssl-3.2.3.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/io/netty/netty-all/4.1.8.Final" includes="netty-all-4.1.8.Final.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-configuration/3.3.3" includes="neo4j-configuration-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-index/3.3.3" includes="neo4j-index-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-ssl/3.3.3" includes="neo4j-ssl-3.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/io/netty/netty-all/4.1.17.Final" includes="netty-all-4.1.17.Final.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.53" includes="bcpkix-jdk15on-1.53.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.53" includes="bcprov-jdk15on-1.53.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-lucene-index/3.2.3" includes="neo4j-lucene-index-3.2.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/neo4j/neo4j-lucene-index/3.3.3" includes="neo4j-lucene-index-3.3.3.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/apache/lucene/lucene-analyzers-common/5.5.0" includes="lucene-analyzers-common-5.5.0.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/apache/lucene/lucene-core/5.5.0" includes="lucene-core-5.5.0.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/apache/lucene/lucene-queryparser/5.5.0" includes="lucene-queryparser-5.5.0.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/apache/lucene/lucene-codecs/5.5.0" includes="lucene-codecs-5.5.0.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/com/martiansoftware/jsap/2.1" includes="jsap-2.1.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/json/json/20090211" includes="json-20090211.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/reactome/server/interactors/interactor-core/1.0.14" includes="interactor-core-1.0.14.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/uk/ac/ebi/enfin/mi/cluster/micluster/1.7.13" includes="micluster-1.7.13.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/commons-collections/commons-collections/3.2" includes="commons-collections-3.2.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/net/sourceforge/jocache/shiftone-cache/2.0b" includes="shiftone-cache-2.0b.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/net/sf/ehcache/ehcache/1.2.3" includes="ehcache-1.2.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/commons-logging/commons-logging/1.0.4" includes="commons-logging-1.0.4.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/hupo/psi/mi/psicquic/psicquic-registry-client/1.1.0" includes="psicquic-registry-client-1.1.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/apache/servicemix/specs/org.apache.servicemix.specs.jaxb-api-2.1/2.0.0" includes="org.apache.servicemix.specs.jaxb-api-2.1-2.0.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/apache/servicemix/specs/org.apache.servicemix.specs.stax-api-1.0/2.0.0" includes="org.apache.servicemix.specs.stax-api-1.0-2.0.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/apache/geronimo/specs/geronimo-activation_1.1_spec/1.0.2" includes="geronimo-activation_1.1_spec-1.0.2.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/apache/servicemix/bundles/org.apache.servicemix.bundles.jaxb-impl/2.2.4_2" includes="org.apache.servicemix.bundles.jaxb-impl-2.2.4_2.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/javax/xml/bind/jaxb-api/2.2.3" includes="jaxb-api-2.2.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/javax/xml/stream/stax-api/1.0-2" includes="stax-api-1.0-2.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/javax/activation/activation/1.1" includes="activation-1.1.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/javax/activation/com.springsource.javax.activation/1.1.1" includes="com.springsource.javax.activation-1.1.1.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/javax/xml/stream/com.springsource.javax.xml.stream/1.0.1" includes="com.springsource.javax.xml.stream-1.0.1.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/hupo/psi/mi/psicquic/psicquic-simple-client/1.3.3" includes="psicquic-simple-client-1.3.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/net/sf/json-lib/json-lib/2.2.3" includes="json-lib-2.2.3-jdk15.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/commons-beanutils/commons-beanutils/1.7.0" includes="commons-beanutils-1.7.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/net/sf/ezmorph/ezmorph/1.0.6" includes="ezmorph-1.0.6.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/uk/ac/ebi/enfin/mi/score/miscore/1.3.14" includes="miscore-1.3.14.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/net/sf/json-lib/json-lib/2.2.3" includes="json-lib-2.2.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.4" includes="jackson-core-2.8.4.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.4" includes="jackson-databind-2.8.4.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.0" includes="jackson-annotations-2.8.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/psidev/psi/mi/psimitab/1.8.5" includes="psimitab-1.8.5.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/psidev/psi/mi/psi25-xml/1.8.5" includes="psi25-xml-1.8.5.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/psidev/psi/tools/xxindex/0.11" includes="xxindex-0.11.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/cpdetector/cpdetector/1.0.7" includes="cpdetector-1.0.7.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/antlr/com.springsource.antlr/2.7.7" includes="com.springsource.antlr-2.7.7.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/jargs/jargs/1.0" includes="jargs-1.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/mozilla/intl/chardet/1.0" includes="chardet-1.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/apache/commons/com.springsource.org.apache.commons.logging/1.1.1" includes="com.springsource.org.apache.commons.logging-1.1.1.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/apache/log4j/com.springsource.org.apache.log4j/1.2.15" includes="com.springsource.org.apache.log4j-1.2.15.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/apache/servicemix/specs/org.apache.servicemix.specs.jaxb-api-2.2/2.1.0" includes="org.apache.servicemix.specs.jaxb-api-2.2-2.1.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/net/sf/saxon/saxon-xom/8.7" includes="saxon-xom-8.7.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/net/sf/saxon/saxon/8.7" includes="saxon-8.7.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/xom/xom/1.1" includes="xom-1.1.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/xerces/xmlParserAPIs/2.6.2" includes="xmlParserAPIs-2.6.2.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/xalan/xalan/2.7.0" includes="xalan-2.7.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/xml-apis/xml-apis/1.0.b2" includes="xml-apis-1.0.b2.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/jaxen/jaxen/1.1-beta-8" includes="jaxen-1.1-beta-8.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/dom4j/dom4j/1.6.1" includes="dom4j-1.6.1.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/jdom/jdom/1.0" includes="jdom-1.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/apache/commons/com.springsource.org.apache.commons.collections/3.2.1" includes="com.springsource.org.apache.commons.collections-3.2.1.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/apache/commons/com.springsource.org.apache.commons.lang/2.4.0" includes="com.springsource.org.apache.commons.lang-2.4.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/com/googlecode/concurrent-trees/concurrent-trees/2.5.0" includes="concurrent-trees-2.5.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/xerial/sqlite-jdbc/3.8.11.2" includes="sqlite-jdbc-3.8.11.2.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/junit/junit/4.12" includes="junit-4.12.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/org/hamcrest/hamcrest-core/1.3" includes="hamcrest-core-1.3.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/net/sf/supercsv/super-csv/2.4.0" includes="super-csv-2.4.0.jar"/>
+            <zipfileset dir="${user.home}/.m2/repository/commons-io/commons-io/2.5" includes="commons-io-2.5.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/ch/qos/logback/logback-classic/1.1.10" includes="logback-classic-1.1.10.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/ch/qos/logback/logback-core/1.1.10" includes="logback-core-1.1.10.jar"/>
             <zipfileset dir="${user.home}/.m2/repository/org/slf4j/slf4j-api/1.7.22" includes="slf4j-api-1.7.22.jar"/>
-            <zipfileset dir="${user.home}/.m2/repository/log4j/log4j/1.2.17" includes="log4j-1.2.17.jar"/>
         </jar>
     </target>
 </project>
