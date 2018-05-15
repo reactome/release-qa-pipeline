@@ -39,7 +39,7 @@ done
 
 if [ -n "$config" ]; then
     [ -r "$config" ] || fail "Can't read configuration file $config"
-    eval `cat $config | sed -E 's/^([^=]+)-/\1_/' | tr -d ' '`
+    eval `cat $config | sed -E 's/^([^=]+)-/\1_/' | tr -d ' ' | sed -E "s/=(.*)/='\1'/"`
 fi
 
 [ -z "$mysql_db" ] && fail "Missing required option: --mysql_db"

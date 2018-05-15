@@ -33,7 +33,7 @@ done
 
 if [ -n "$config" ]; then
     [ -r "$config" ] || fail "Can't read configuration file $config"
-    eval `cat $config | sed -E 's/^([^=]+)-/\1_/' | tr -d ' '`
+    eval `cat $config | sed -E 's/^([^=]+)-/\1_/' | tr -d ' ' | sed -E "s/=(.*)/='\1'/"`
 fi
 
 opts="-o reports"
@@ -43,5 +43,4 @@ opts="-o reports"
 
 dir=`dirname $0`
 rm -f $dir/reports/*
-[ -d $dir/target ] || mkdir $dir/target
 (cd $dir; java -Xmx8G -jar graph-qa-with-dependencies.jar $opts)
