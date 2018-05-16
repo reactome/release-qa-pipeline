@@ -121,8 +121,8 @@ Run the scripts as follows:
 
         sudo systemctl stop neo4j
         (cd /var/lib/neo4j/data/databases/;
-         sudo rm -r graph.db.old;
-         sudo mv graph.db graph.db.old;
+         [ -d graph.db.old ] && sudo rm -r graph.db.old;
+         [ -d graph.db ] && sudo mv graph.db graph.db.old;
          sudo cp -r /usr/local/reactomes/Reactome/release-qa/graph/data/databases/graph.db .;
          sudo chown -R neo4j:adm graph.db)
         sudo systemctl start neo4j
