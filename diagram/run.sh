@@ -56,4 +56,4 @@ opts="-o target"
 dir=`dirname $0`
 rm -f $dir/reports/*
 mkdir -p $dir/target
-(cd $dir; java -jar diagram-converter-with-dependencies.jar $opts) >/dev/null
+(cd $dir; java -jar diagram-converter-with-dependencies.jar $opts >diagram.out)
