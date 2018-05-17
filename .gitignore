@@ -2,6 +2,7 @@
 auth.properties
 docker-compose.yml
 *.cfg
+*.out
 */log/*
 */logs/*
 *.log
