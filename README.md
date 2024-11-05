@@ -9,11 +9,11 @@ Build
    - [CuratorTool](https://github.com/reactome/CuratorTool.git)
    - [graph-importer](https://github.com/reactome/graph-importer.git)
    - [graph-qa](https://github.com/reactome/graph-qa.git)
-   - [diagram-converter](https://github.com/reactome-pwp/diagram-converter.git)
+   - [diagram-converter](https://github.com/reactome/diagram-converter.git)
    - [release-qa](https://github.com/reactome/release-qa.git)
 
-   Place the `reactome` and `reactome-pwp` repository directories
-   under a common parent directory.
+   Place the `reactome` repository directory
+   under a parent directory.
 
    _Note_: As of May 2018, some repository locations will change in
    the near future.
