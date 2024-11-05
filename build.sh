@@ -10,7 +10,7 @@ cp -f ../graph-qa/target/graph-qa-jar-with-dependencies.jar \
 
 # Diagram.
 cp -f \
-   ../../reactome-pwp/diagram-converter/target/diagram-converter-jar-with-dependencies.jar \
+   ../../reactome/diagram-converter/target/diagram-converter-jar-with-dependencies.jar \
    diagram/diagram-converter-with-dependencies.jar
 
 # Slice.
